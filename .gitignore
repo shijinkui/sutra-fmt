@@ -14,7 +14,6 @@ log
 logs
 precompiled
 project/project
-project/target
 target
 .target
 tmp
@@ -32,13 +31,9 @@ activator*
 # except for activator.properties
 !activator.properties
 
-project/project
-
-
 # Compiled source #
 ###################
 *.com
-*.class
 *.dll
 *.exe
 *.o
@@ -80,6 +75,5 @@ Thumbs.db
 .classpath
 
 # IDEA
-/.idea
 /.idea_modules
 

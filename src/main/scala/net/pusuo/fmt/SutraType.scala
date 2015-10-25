@@ -7,7 +7,9 @@ import com.alibaba.fastjson.{JSON, JSONObject}
  * Created by sjk on 10/20/15.
  */
 
-case class SutraType(name: String, code: String, nick: String, tpe: String)
+case class SutraType(name: String, code: String, nick: String, tpe: String) {
+  def dir: String = code + "_" + name
+}
 
 object SutraType {
   val map = parseMeta
@@ -58,8 +60,8 @@ object SutraType {
                  |    "type": "佛教书局编辑<br>台北：佛教书局, 1978."
                  |  },
                  |  {
-                 |    "code": "H(ZS)",
-                 |    "en_name": "Passages concerning Buddhism from the Official Histories",
+                 |    "code": "H",
+                 |    "en_name": "(ZS) Passages concerning Buddhism from the Official Histories",
                  |    "name": "正史佛教资料类编",
                  |    "nick": "【正史】",
                  |    "type": "杜斗城辑编<br>兰州：甘肃文化出版社, 2006."
@@ -149,8 +151,8 @@ object SutraType {
                  |    "type": "四川省佛教协会<br>成都：四川省佛教协会, 1999."
                  |  },
                  |  {
-                 |    "code": "W(ZW)",
-                 |    "en_name": "Buddhist Texts not contained in the Tripiṭaka",
+                 |    "code": "W",
+                 |    "en_name": "(ZW)Buddhist Texts not contained in the Tripiṭaka",
                  |    "name": "藏外佛教文献",
                  |    "nick": "【藏外】",
                  |    "type": "方广锠主编<br>北京：宗教文化出版社, 1995-2003."
